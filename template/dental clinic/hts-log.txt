@@ -1,0 +1,29 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 14 Nov 2018 16:42:45 at http://fvdthemes.com/html/dentalclinic/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://fvdthemes.com/html/dentalclinic/index.html -O1 "C:\Users\Jinadi\OneDrive\Documents\dental clinic" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:44:24	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/images/apple-touch-icon.png (from fvdthemes.com/html/dentalclinic/index.html)
+16:44:24	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/images/apple-touch-icon-72x72.png (from fvdthemes.com/html/dentalclinic/index.html)
+16:44:24	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/images/apple-touch-icon-114x114.png (from fvdthemes.com/html/dentalclinic/index.html)
+16:45:17	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/js/jquery.form.js (from fvdthemes.com/html/dentalclinic/index.html)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/Popover requires tooltip.js (from fvdthemes.com/html/dentalclinic/js/bootstrap.min.js)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/specified parentLocale is not defined yet. See http://momentjs.com/guides/ (from fvdthemes.com/html/dentalclinic/js/moment.js)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/isDSTShifted is deprecated. See http://momentjs.com/guides/ (from fvdthemes.com/html/dentalclinic/js/moment.js)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/fonts/glyphicons-halflings-regular.eot (from fvdthemes.com/html/dentalclinic/css/bootstrap.css)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/fonts/glyphicons-halflings-regular.eot? (from fvdthemes.com/html/dentalclinic/css/bootstrap.css)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/fonts/glyphicons-halflings-regular.woff2 (from fvdthemes.com/html/dentalclinic/css/bootstrap.css)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/fonts/glyphicons-halflings-regular.woff (from fvdthemes.com/html/dentalclinic/css/bootstrap.css)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/fonts/glyphicons-halflings-regular.ttf (from fvdthemes.com/html/dentalclinic/css/bootstrap.css)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/fonts/glyphicons-halflings-regular.svg (from fvdthemes.com/html/dentalclinic/css/bootstrap.css)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/assets/flaticon/Flaticon.svg (from fvdthemes.com/html/dentalclinic/assets/flaticon/flaticon.css)
+16:46:28	Warning: 	File not parsed, looks like binary: fvdthemes.com/html/dentalclinic/css/images/openhand.cur
+16:46:28	Warning: 	File not parsed, looks like binary: fvdthemes.com/html/dentalclinic/css/images/closedhand.cur
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/css/grabbing.png (from fvdthemes.com/html/dentalclinic/css/owl.carousel.css)
+16:46:28	Error: 	"Not Found" (404) at link fvdthemes.com/html/dentalclinic/css/AjaxLoader.gif (from fvdthemes.com/html/dentalclinic/css/owl.theme.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 45 seconds : 186 links scanned, 169 files written (6864220 bytes overall) [5289508 bytes received at 23508 bytes/sec], 2106715 bytes transferred using HTTP compression in 54 files, ratio 21%, 20.6 requests per connection
+(16 errors, 2 warnings, 0 messages)
