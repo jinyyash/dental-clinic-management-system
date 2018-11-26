@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php include 'header.php';?>
 	<?php include 'sidebar.php';?>
-	<link rel="stylesheet" href="<?php echo base_url(); ?>/assests/w3.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<style type="text/css">
@@ -33,7 +33,7 @@
 <body>
 	<div class="w3-content" style="max-width:2000px;margin-top:49px;">
 		<div class="sidebar">
-			<a class="" onclick=""><img src="<?php echo base_url(); ?>/assests/images/user.png"><i class="fa fa-circle" style="color: green;font-size: 0.8em;padding-right: 5px"></i>Online</a>
+			<a class="" onclick=""><img src="<?php echo base_url(); ?>/assets/images/user.png"><i class="fa fa-circle" style="color: green;font-size: 0.8em;padding-right: 5px"></i>Online</a>
 			<a class="" href="add_new"><i class="fa fa-user-md" style="padding-right: 10px"></i>Manage Doctors </a>
 		    
 		    
