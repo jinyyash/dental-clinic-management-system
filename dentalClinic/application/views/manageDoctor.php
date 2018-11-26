@@ -66,17 +66,22 @@
 			      			</div>
 			      		</div>
 			      		<div class="w3-row-padding" style="padding-top: 20px;">
-			      			<div class="w3-col" style="width:50%;">
-			      				<label>Gender</label>
-			      				<br>
-			      				<select class="w3-round w3-input w3-border" name="gender">
-			      					<option value="male">Male</option>
-			      					<option value="female">Female</option>
-			      				</select>
-			      			</div>
-			      			<div class="w3-col" style="width:50%;">
+			      			
+			      			<div class="w3-col">
 			      				<label>Address</label>
 			      				<input class="w3-input w3-border w3-round" type="text" name="address" placeholder="" value="">
+			      			</div>
+			      		</div>
+			      		<div class="w3-row-padding" style="padding-top: 20px;">
+			      			<div class="w3-col">
+			      				<label>Speciality</label>
+			      				<input class="w3-input w3-border w3-round" type="text" name="spec" placeholder="" value="">
+			      			</div>
+			      		</div>
+			      		<div class="w3-row-padding" style="padding-top: 20px;">
+			      			<div class="w3-col" >
+			      				<label>Qualification</label>
+			      				<input class="w3-input w3-border w3-round" type="text" name="qf" placeholder="" value="">
 			      			</div>
 			      		</div>
 			      		<div class="w3-row-padding" style="padding-top: 20px;">
@@ -84,10 +89,7 @@
 			      				<label>Contact No</label>
 			      				<input class="w3-input w3-border w3-round" type="text" name="cno" placeholder="" value="">
 			      			</div>
-			      			<div class="w3-col" style="width:50%;">
-			      				<label>Email</label>
-			      				<input class="w3-input w3-border w3-round" type="Email" name="email" placeholder="" value="">
-			      			</div>
+			      			
 			      		</div>
 			      		<div class="w3-row-padding" style="padding-top: 20px; padding-bottom: 20px;">
 				      		<div class="w3-center">
@@ -116,24 +118,24 @@
 					<tr>
 						<th>ID</th>
 						<th>Doctor Name</th>
-						<th>Gender</th>
 						<th>Address</th>
+						<th>Speciality</th>
+						<th>Qualification</th>
 						<th>Contact No</th>
-						<th>Email</th>
 						<th>Action</th>
 					</tr>
 					<?php if (is_array($docData) ){?>
 					<?php foreach ($docData as $row) {?>
 						<tr>
-							<td><?php echo $row->id; ?></td>
+							<td><?php echo $row->did; ?></td>
 							<td><?php echo $row->name; ?></td>
-							<td><?php echo $row->gender; ?></td>
-							<td><?php echo $row->address; ?></td>	
-							<td><?php echo $row->cno; ?></td>	
-							<td><?php echo $row->email; ?></td>
+							<td><?php echo $row->address; ?></td>
+							<td><?php echo $row->speciality; ?></td>	
+							<td><?php echo $row->qualification; ?></td>	
+							<td><?php echo $row->contact_no; ?></td>
 							<td>
-								<a href="edit_doctor?id=<?php echo $row->id?>" class="w3-button w3-green w3-hover-shadow w3-hover-green w3-round">Edit</a>
-								<a href="delete_doctor?id=<?php echo $row->id?>" class="w3-button w3-red w3-hover-shadow w3-hover-red w3-round">Delete</a>
+								<a href="edit_doctor?id=<?php echo $row->did?>" class="w3-button w3-green w3-hover-shadow w3-hover-green w3-round">Edit</a>
+								<a href="delete_doctor?id=<?php echo $row->did?>" class="w3-button w3-red w3-hover-shadow w3-hover-red w3-round">Delete</a>
 							</td>
 						</tr>	
 							

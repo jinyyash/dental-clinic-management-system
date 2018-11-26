@@ -10,12 +10,12 @@ class Admin extends CI_Controller {
 	public function add_doctor(){
 		$this->load->model("admin_model");
 		$data = array(
-			'id' => $this->input->post('id'),
+			'did' => $this->input->post('id'),
 			'name' => $this->input->post('dname'),
-			'gender' => $this->input->post('gender'),
 			'address' => $this->input->post('address'),
-			'cno' => $this->input->post('cno'),
-			'email' => $this->input->post('email')
+			'speciality' => $this->input->post('spec'),
+			'qualification' => $this->input->post('qf'),
+			'contact_no' => $this->input->post('cno')
 		);
 		$this->admin_model->add_doctor($data);
 		redirect('index.php/admin/manage_doctor');

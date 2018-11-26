@@ -15,7 +15,7 @@ Class Admin_model extends CI_Model{
 	}
 	public function delete_doctor($id){
 		$this->load->database("");
-		$this->db->where('id', $id);
+		$this->db->where('did', $id);
   		$this->db->delete('doctor');
 	}
 }
