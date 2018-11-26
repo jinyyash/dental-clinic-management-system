@@ -1,0 +1,127 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema dental_db
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema dental_db
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `dental_db` DEFAULT CHARACTER SET latin1 ;
+USE `dental_db` ;
+
+-- -----------------------------------------------------
+-- Table `dental_db`.`appoinment`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dental_db`.`appoinment` (
+  `aid` VARCHAR(10) NOT NULL,
+  `pid` VARCHAR(10) NOT NULL,
+  `eid` VARCHAR(10) NOT NULL,
+  `did` VARCHAR(10) NOT NULL,
+  `date` VARCHAR(15) NULL DEFAULT NULL,
+  `name` VARCHAR(25) NULL DEFAULT NULL,
+  `status` VARCHAR(10) NULL DEFAULT NULL,
+  PRIMARY KEY (`aid`),
+  INDEX `pid` (`pid` ASC),
+  INDEX `eid` (`eid` ASC),
+  INDEX `did` (`did` ASC))
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `dental_db`.`doctor`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dental_db`.`doctor` (
+  `did` INT(11) NOT NULL,
+  `name` VARCHAR(150) NOT NULL,
+  `address` VARCHAR(200) NOT NULL,
+  `speciality` VARCHAR(150) NOT NULL,
+  `qualification` VARCHAR(300) NOT NULL,
+  `contact_no` INT(12) NOT NULL,
+  PRIMARY KEY (`did`))
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `dental_db`.`employee`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dental_db`.`employee` (
+  `eid` INT(11) NOT NULL,
+  `name` VARCHAR(150) NOT NULL,
+  `address` VARCHAR(200) NOT NULL,
+  `contact_num` INT(12) NOT NULL,
+  `position` VARCHAR(100) NOT NULL)
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `dental_db`.`patient`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dental_db`.`patient` (
+  `pid` INT(255) NOT NULL,
+  `name` VARCHAR(150) NOT NULL,
+  `gender` VARCHAR(10) NOT NULL,
+  `address` VARCHAR(200) NOT NULL,
+  `birthday` DATE NOT NULL,
+  `contact_num` INT(12) NOT NULL,
+  PRIMARY KEY (`pid`))
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `dental_db`.`schedule`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dental_db`.`schedule` (
+  `scid` VARCHAR(10) NOT NULL,
+  `sid` VARCHAR(10) NOT NULL,
+  `did` VARCHAR(10) NOT NULL,
+  `avalibleDate` VARCHAR(20) NULL DEFAULT NULL,
+  `avalibleTime` VARCHAR(20) NULL DEFAULT NULL,
+  PRIMARY KEY (`scid`),
+  INDEX `sid` (`sid` ASC),
+  INDEX `did` (`did` ASC))
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `dental_db`.`service`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dental_db`.`service` (
+  `sid` INT(11) NOT NULL,
+  `discription` VARCHAR(400) NOT NULL,
+  `process_time` VARCHAR(10) NOT NULL,
+  `price` INT(11) NOT NULL,
+  PRIMARY KEY (`sid`))
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `dental_db`.`servicedetail`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dental_db`.`servicedetail` (
+  `sdid` VARCHAR(10) NOT NULL,
+  `sid` VARCHAR(10) NOT NULL,
+  `aid` VARCHAR(10) NOT NULL,
+  PRIMARY KEY (`sdid`),
+  INDEX `sid` (`sid` ASC),
+  INDEX `aid` (`aid` ASC))
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = latin1;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
