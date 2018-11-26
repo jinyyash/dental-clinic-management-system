@@ -34,7 +34,7 @@
 	<div class="w3-content" style="max-width:2000px;margin-top:49px;">
 		<div class="sidebar">
 			<a class="" onclick=""><img src="<?php echo base_url(); ?>/assets/images/user.png"><i class="fa fa-circle" style="color: green;font-size: 0.8em;padding-right: 5px"></i>Online</a>
-			<a class="" href="add_new"><i class="fa fa-user-md" style="padding-right: 10px"></i>Manage Doctors </a>
+			<a class="" href="manage_doctor"><i class="fa fa-user-md" style="padding-right: 10px"></i>Manage Doctors </a>
 		    
 		    
 		</div>
@@ -69,7 +69,7 @@
 			      			<div class="w3-col" style="width:50%;">
 			      				<label>Gender</label>
 			      				<br>
-			      				<select class="w3-round w3-input w3-border">
+			      				<select class="w3-round w3-input w3-border" name="gender">
 			      					<option value="male">Male</option>
 			      					<option value="female">Female</option>
 			      				</select>
@@ -102,9 +102,9 @@
 				<div class="w3-col" style="width: 7%;padding-top: 5px;">
 					<span>Search :</span>
 				</div>
-				<form method="post" action="">
+				<form method="post" action="../admin/search_doctor">
 					<div class="w3-col" style="width: 20%">
-						<input class="w3-input w3-border w3-round" type="text" name="fax" placeholder="" value="">
+						<input class="w3-input w3-border w3-round" type="text" name="doc_name" placeholder="Dr. Jeewan" value="">
 					</div>
 					<div class="w3-col" style="width: 20%;padding-left: 20px;">
 						<button type="submit" class="w3-button w3-green w3-round w3-hover-shadow w3-hover-green">Search</button>
@@ -116,12 +116,30 @@
 					<tr>
 						<th>ID</th>
 						<th>Doctor Name</th>
+						<th>Gender</th>
 						<th>Address</th>
 						<th>Contact No</th>
-						<th></th>
+						<th>Email</th>
 						<th>Action</th>
 					</tr>
-
+					<?php if (is_array($docData) ){?>
+					<?php foreach ($docData as $row) {?>
+						<tr>
+							<td><?php echo $row->id; ?></td>
+							<td><?php echo $row->name; ?></td>
+							<td><?php echo $row->gender; ?></td>
+							<td><?php echo $row->address; ?></td>	
+							<td><?php echo $row->cno; ?></td>	
+							<td><?php echo $row->email; ?></td>
+							<td>
+								<a href="edit_doctor?id=<?php echo $row->id?>" class="w3-button w3-green w3-hover-shadow w3-hover-green w3-round">Edit</a>
+								<a href="delete_doctor?id=<?php echo $row->id?>" class="w3-button w3-red w3-hover-shadow w3-hover-red w3-round">Delete</a>
+							</td>
+						</tr>	
+							
+						
+					<?php } ?>
+					<?php } ?>
 				</table>
 			</div>
 			
