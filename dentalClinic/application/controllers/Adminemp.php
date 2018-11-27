@@ -1,6 +1,6 @@
 <?php
 
-class Admin extends CI_Controller
+class Adminemp extends CI_Controller
 {
 	public function manage_employee()
 	{
@@ -14,15 +14,15 @@ class Admin extends CI_Controller
 	{
 		$this->load->model("admin_model");
 		$data = array(
-			'eid' => $this->input->post('eid'),
-			'name' => $this->input->post('name'),
+			'eid' => $this->input->post('id'),
+			'name' => $this->input->post('ename'),
 			'address' => $this->input->post('address'),
-			'contact_no' => $this->input->post('contact_no'),
-			'position' => $this->input->post('position'),
+			'contact_num' => $this->input->post('cn'),
+			'position' => $this->input->post('ps')
 
 		);
 		$this->admin_model->add_employee($data);
-		redirect('index.php/admin/manage_employee');
+		redirect('index.php/adminemp/manage_employee');
 
 	}
 	public function search_employee()
@@ -35,9 +35,9 @@ class Admin extends CI_Controller
 	public function delete_employee()
 	{
 		$this->load->model("admin_model");
-		$id = $this->input->get('eid');
+		$id = $this->input->get('id');
 		$this->admin_model->delete_employee($id);
-		redirect('index.php/admin/manage_employee');
+		redirect('index.php/adminemp/manage_employee');
 	}
 	public function edit_employee()
 	{

@@ -34,7 +34,7 @@
 	<div class="w3-content" style="max-width:2000px;margin-top:49px;">
 		<div class="sidebar">
 			<a class="" onclick=""><img src="<?php echo base_url(); ?>/assets/images/user.png"><i class="fa fa-circle" style="color: green;font-size: 0.8em;padding-right: 5px"></i>Online</a>
-			<a class="" href="manage_doctor"><i class="fa fa-user-md" style="padding-right: 10px"></i>Manage Employees </a>
+			<a class="" href="manage_employee"><i class="fa fa-user-md" style="padding-right: 10px"></i>Manage Employee </a>
 		    
 		    
 		</div>
@@ -54,7 +54,7 @@
 					        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
 				      	</div>
 			      	</div>
-			      	<form class="w3-container" action="../Admin/add_doctor" method="post">
+			      	<form class="w3-container" action="../Adminemp/add_employee" method="post">
 			      		<div class="w3-row-padding" style="padding-top: 20px;">
 			      			<div class="w3-col" style="width:50%;">
 			      				<label>Employee ID</label>
@@ -98,9 +98,9 @@
 				<div class="w3-col" style="width: 7%;padding-top: 5px;">
 					<span>Search :</span>
 				</div>
-				<form method="post" action="../admin/search_employee">
+				<form method="post" action="../adminemp/search_employee">
 					<div class="w3-col" style="width: 20%">
-						<input class="w3-input w3-border w3-round" type="text" name="emp_name" placeholder="Mr. weerasinghe" value="">
+						<input class="w3-input w3-border w3-round" type="text" name="emp_name" placeholder= >
 					</div>
 					<div class="w3-col" style="width: 20%;padding-left: 20px;">
 						<button type="submit" class="w3-button w3-green w3-round w3-hover-shadow w3-hover-green">Search</button>
@@ -118,13 +118,13 @@
 
 						<th>Action</th>
 					</tr>
-					<?php if (is_array($docData) ){?>
+					<?php if (is_array($empData) ){?>
 					<?php foreach ($empData as $row) {?>
 						<tr>
 							<td><?php echo $row->eid; ?></td>
 							<td><?php echo $row->name; ?></td>
 							<td><?php echo $row->address; ?></td>
-							<td><?php echo $row->contact_no; ?></td>
+							<td><?php echo $row->contact_num; ?></td>
 							<td><?php echo $row->position; ?></td>
 
 							<td>

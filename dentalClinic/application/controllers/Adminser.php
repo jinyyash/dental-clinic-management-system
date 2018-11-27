@@ -7,7 +7,7 @@ class Adminser extends CI_Controller
 	public function manage_service()
 	{
 		$this->load->model("admin_model");
-		$search = $this->input->post('ser_name');
+		$search = $this->input->post('service_name');
 		$data['serData'] = $this->admin_model->search_employee($search);
 		$this->load->view('manageServices', $data);
 	}
@@ -25,14 +25,14 @@ class Adminser extends CI_Controller
 
 		);
 		$this->admin_model->add_service($data);
-		redirect('index.php/admin/manage_service');
+		redirect('index.php/adminser/manage_service');
 
 	}
 
 	public function search_service()
 	{
 		$this->load->model("admin_model");
-		$search = $this->input->post('ser_name');
+		$search = $this->input->post('service_name');
 		$data['serData'] = $this->admin_model->search_service($search);
 		$this->load->view('manageServices', $data);
 	}
@@ -42,7 +42,7 @@ class Adminser extends CI_Controller
 		$this->load->model("admin_model");
 		$id = $this->input->get('sid');
 		$this->admin_model->delete_service($id);
-		redirect('index.php/admin/manage_service');
+		redirect('index.php/adminser/manage_service');
 	}
 
 	public function edit_service()
