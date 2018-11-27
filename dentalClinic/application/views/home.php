@@ -102,7 +102,6 @@
               <span class="color-child-5">
                 CLINIC
               </span>
-              <h1><?php echo base_url();?></h1>
             </a> </div>
           <div class="mobile-bar">
             <div class="show-menu" id="show-menu"> <i class="fa fa-bars"></i> </div>
@@ -114,7 +113,7 @@
           <li><a href="about.html">ABOUT US</a></li>
           <li class="dropdown"> <a data-toggle="dropdown" href="services.html">SERVICES</a>
             <ul class="dropdown-menu with-bg" role="menu">
-              <li><a href="services.html">Oral exams</a></li>
+              <li><a href="<?php echo base_url();?>index.php/service/services">Oral exams</a></li>
               <li><a href="services.html">Teeth whitening</a></li>
               <li><a href="services.html">Teeth cleaning</a></li>
               <li><a href="services.html">X-rays</a></li>
