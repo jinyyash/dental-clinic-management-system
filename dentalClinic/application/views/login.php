@@ -6,14 +6,17 @@
 	@import "bourbon";
 
 	body {
-	background: #eee !important;
+	
+	background: #7cb9e8 !important;
+	
 		
 }
 
 
+
 .wrapper {	
 	margin-top: 150px;
-  	margin-bottom: 80px;
+  margin-bottom: 80px;
 	
 	padding: 0px;
 	border-radius: 25px;
@@ -25,7 +28,7 @@
   margin: 0 auto;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,0.1);  
-
+  margin-top:120px;
   .form-signin-heading,
 	.checkbox {
 	  margin-bottom: 30px;
@@ -77,7 +80,8 @@
 </style>
 </head>
 <body>
-<div class="wrapper">
+
+
 
     <form class="form-signin" method="post" action="<?php echo base_url();?>index.php/client/load_appointment_form">       
       <h2 class="form-signin-heading">Please login First</h2><br>
@@ -91,6 +95,6 @@
       <button class="btn btn-lg btn-primary btn-block" type="submit" >Login</button> <br>
          
     </form>
-  </div>
+  
 </body>
 </html>
