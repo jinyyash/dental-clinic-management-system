@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8081/dental-clinic-management-system/dentalClinic/';
+$config['base_url'] = 'http://localhost//dental-clinic-management-system/dentalClinic/';
 
 /*
 |--------------------------------------------------------------------------

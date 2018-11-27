@@ -91,9 +91,13 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
+<<<<<<< HEAD
 
 $autoload['helper'] = array('url','form');
 
+=======
+$autoload['helper'] = array('url');
+>>>>>>> refs/remotes/origin/client_login
 
 /*
 | -------------------------------------------------------------------
