@@ -111,36 +111,12 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT US</a></li>
-          <li class="dropdown"> <a data-toggle="dropdown" href="services.html">SERVICES</a>
-            <ul class="dropdown-menu with-bg" role="menu">
-              <li><a href="<?php echo base_url();?>index.php/service/services">Oral exams</a></li>
-              <li><a href="services.html">Teeth whitening</a></li>
-              <li><a href="services.html">Teeth cleaning</a></li>
-              <li><a href="services.html">X-rays</a></li>
-              <li><a href="services.html">Crowns</a></li>
-              <li><a href="services.html">Fillings and bridges</a></li>
-              <li><a href="services.html">Implants</a></li>
-              <li><a href="services.html">Extractions</a></li>
-              <li><a href="services.html">Root canals</a></li>
-              <li><a href="services.html">Surgical implant placements</a></li>
-            </ul>
+          <li > <a  href="<?php echo base_url();?>index.php/service/services">SERVICES</a>
           </li>
-          <li class="dropdown"> <a data-toggle="dropdown" href="#">OUR DOCTORS</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="doctors.html">Our doctors</a></li>
-              <li><a href="doctor.html">Doctor</a></li>
-            </ul>
+          <li > <a  href="#">OUR DOCTORS</a>
+      
           </li>
-          <li class="dropdown"> <a data-toggle="dropdown" href="#">BLOG</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="blog1.html">Right sidebar</a></li>
-              <li><a href="blog2.html">Left sidebar</a></li>
-              <li><a href="blog3.html">No sidebar</a></li>
-              <li><a href="blog4.html">Column right sidebar</a></li>
-              <li><a href="blog_item.html">Post with sidebar</a></li>
-              <li><a href="blog_item2.html">Post no sidebar</a></li>
-            </ul>
-          </li>
+
           <li class="dropdown"> <a data-toggle="dropdown" href="#">PAGES</a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="gallery1.html">Gallery 1</a></li>
@@ -340,34 +316,7 @@
 <!-- =========================
      CERTIFICATES
 ============================== -->
-<div class="certs">
-  <div class="container">
-    <div class="row">
-      <h3>Certificates of completion</h3>
-      <div class="certs-container">
-        <div class="owl-certs" id="owl-certs"> 
-          <!-- CERTIFICATES ITEM -->
-          <div class="certs-item"> <a href="<?php echo base_url();?>assets/images/cert1-b.jpg" class="fancybox"><img src="<?php echo base_url();?>assetsimages/cert1.jpg" alt="" /></a> </div>
-          <!-- CERTIFICATES ITEM -->
-          <div class="certs-item"> <a href="<?php echo base_url();?>assets/images/cert2-b.jpg" class="fancybox"><img src="<?php echo base_url();?>assetsimages/cert2.jpg" alt="" /></a> </div>
-          <!-- CERTIFICATES ITEM -->
-          <div class="certs-item"> <a href="<?php echo base_url();?>assets/images/cert3-b.jpg" class="fancybox"><img src="<?php echo base_url();?>assetsimages/cert3.jpg" alt="" /></a> </div>
-          <!-- CERTIFICATES ITEM -->
-          <div class="certs-item"> <a href="<?php echo base_url();?>assets/images/cert4-b.jpg" class="fancybox"><img src="<?php echo base_url();?>assetsimages/cert4.jpg" alt="" /></a> </div>
-          <!-- CERTIFICATES ITEM -->
-          <div class="certs-item"> <a href="<?php echo base_url();?>assets/images/cert5-b.jpg" class="fancybox"><img src="<?php echo base_url();?>assetsimages/cert5.jpg" alt="" /></a> </div>
-          <!-- CERTIFICATES ITEM -->
-          <div class="certs-item"> <a href="<?php echo base_url();?>assets/images/cert1-b.jpg" class="fancybox"><img src="<?php echo base_url();?>assetsimages/cert1.jpg" alt="" /></a> </div>
-          <!-- CERTIFICATES ITEM -->
-          <div class="certs-item"> <a href="<?php echo base_url();?>assets/images/cert2-b.jpg" class="fancybox"><img src="<?php echo base_url();?>assetsimages/cert2.jpg" alt="" /></a> </div>
-        </div>
-        <!-- CERTIFICATES BUTTONS -->
-        <div class="carousel-btn carousel-next" id="next-certs"><i class="fa fa-angle-right"></i></div>
-        <div class="carousel-btn carousel-prev" id="prev-certs"><i class="fa fa-angle-left"></i></div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!-- =========================
      END CERTIFICATES
 ============================== --> 
@@ -610,7 +559,7 @@
           <!-- STORIES ITEM -->
           <div class="stories-item">
             <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
-              <div class="stories-item-name"> Jeanette Evvie </div>
+              <div class="stories-item-name"> Vilashi Siriwardhana </div>
               <div class="stories-item-position"> Student </div>
               <div class="stories-item-rating">
                 <select id="stories-rating-1" name="stories-rating-1">
@@ -622,7 +571,7 @@
                 </select>
               </div>
               <div class="stories-item-text">
-                <div class="stories-item-text-quote"><img src="<?php echo base_url();?>assets/images/quote.png" alt="" /></div>
+                <div class="stories-item-text-quote"><img src="<?php echo base_url();?>assets/images/vilash.jpg" alt="" /></div>
                 My visits to Dental clinic is always more than just a pleasant experience! I had my cleaning done by Arnie Alban and she did an absolutely impeccable job!! She meticulously and patiently removed the most stubborn stains without causing any discomfort! If you are seeking perfection, then I highly recommend Arnie! </div>
               <div class="stories-item-desc"> Tooth whitening can be a very effective way of lightening the natural colour of your teeth without removing any of the tooth surface.
                 <ul>
@@ -632,10 +581,10 @@
               </div>
             </div>
             <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-              <div class="stories-item-before"> <img src="<?php echo base_url();?>assets/images/stories1.jpg" alt="" />
+              <div class="stories-item-before"> <img src="<?php echo base_url();?>assets/images/vilashiBe.jpg" alt="" />
                 <div class="stories-item-before-title"> BEFORE </div>
               </div>
-              <div class="stories-item-after"> <img src="<?php echo base_url();?>assets/images/stories2.jpg" alt="" />
+              <div class="stories-item-after"> <img src="<?php echo base_url();?>assets/images/vilashi.jpg" alt="" />
                 <div class="stories-item-after-title"> AFTER </div>
               </div>
             </div>
@@ -644,7 +593,7 @@
           <!-- STORIES ITEM -->
           <div class="stories-item">
             <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
-              <div class="stories-item-name"> Candice Heath </div>
+              <div class="stories-item-name"> Dimuthi Tharaka </div>
               <div class="stories-item-position"> Office Manager </div>
               <div class="stories-item-rating">
                 <select id="stories-rating-2" name="stories-rating-2">
@@ -656,7 +605,7 @@
                 </select>
               </div>
               <div class="stories-item-text">
-                <div class="stories-item-text-quote"><img src="<?php echo base_url();?>assets/images/quote.png" alt="" /></div>
+                <div class="stories-item-text-quote"><img src="<?php echo base_url();?>assets/images/dimuthiAf.png" alt="" /></div>
                 I just recently had my braces taken off and to my amazement, underneath was the most beautiful smile I ever could have dreamed possible. I just wanted to thank you for giving me so much to smile about! </div>
               <div class="stories-item-desc"> Orthodontics can give you the straight teeth and proper bite that will help you chew better, smile more often, and keep your teeth longer.
                 <ul>
@@ -666,10 +615,10 @@
               </div>
             </div>
             <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
-              <div class="stories-item-before"> <img src="<?php echo base_url();?>assets/images/stories3.jpg" alt="" />
+              <div class="stories-item-before"> <img src="<?php echo base_url();?>assets/images/dimuthiBe.jpg" alt="" />
                 <div class="stories-item-before-title"> BEFORE </div>
               </div>
-              <div class="stories-item-after"> <img src="<?php echo base_url();?>assets/images/stories4.jpg" alt="" />
+              <div class="stories-item-after"> <img src="<?php echo base_url();?>assets/images/dimuthiAf.jpg" alt="" />
                 <div class="stories-item-after-title"> AFTER </div>
               </div>
             </div>
@@ -703,18 +652,18 @@
           
           <!-- REVIEW ITEM -->
           <div class="review-item">
-            <div class="review-item-image"> <img src="<?php echo base_url();?>assets/images/review1.jpg" alt="" /> </div>
+            <div class="review-item-image"> <img src="<?php echo base_url();?>assets/images/banda.jpg" alt="" /> </div>
             <div class="review-item-text">This was my first dental treatment in many years and Dr. Callahan made me feel relaxed and calm. It was completely painless and issue free. I thoroughly recommend both Dr. Callahan and Dental clinic. Excellent caring staff! </div>
-            <div class="review-item-name">Caetlin Madyson</div>
+            <div class="review-item-name">Isuru akalanka</div>
             <div class="review-item-position">Comprehensive Cleaning</div>
             <div class="review-item-quote"><img src="<?php echo base_url();?>assets/images/quote.png" alt="" /></div>
           </div>
           
           <!-- REVIEW ITEM -->
           <div class="review-item">
-            <div class="review-item-image"> <img src="<?php echo base_url();?>assets/images/review2.jpg" alt="" /> </div>
+            <div class="review-item-image"> <img src="<?php echo base_url();?>assets/images/jith.jpg" alt="" /> </div>
             <div class="review-item-text">I would like to say a big thank you to all the team at Dental Clinic, from the charming and efficient reception staff to all the dental team. Dr Wyatt's is a truly first class outfit that are the epitome of professionalism. Satisfied with the service. </div>
-            <div class="review-item-name">James Mitchell</div>
+            <div class="review-item-name">kaushalya warnakulasooriya</div>
             <div class="review-item-position">General Dentistry</div>
             <div class="review-item-quote"><img src="<?php echo base_url();?>assets/images/quote.png" alt="" /></div>
           </div>

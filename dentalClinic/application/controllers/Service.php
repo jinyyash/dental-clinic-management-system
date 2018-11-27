@@ -1,7 +1,5 @@
 <?php 
 
-
-
 class Service extends CI_Controller {
     public function allservices() {
 		$data['service'] = $this->project_model->get_service();
@@ -14,32 +12,32 @@ class Service extends CI_Controller {
 		$this->load->view('service_view');
     }
     public function manage_service(){
-		$this->load->model("admin_model");
+		$this->load->model("service_model");
 		$search=$this->input->post('doc_name');
 		$data['docData']=$this->admin_model->search_service($search);
 		$this->load->view('manageservice',$data);
 	}
 	public function add_service(){
-		$this->load->model("admin_model");
+		$this->load->model("service_model");
 		$data = array(
-			'did' => $this->input->post('id'),
-			'name' => $this->input->post('dname'),
-			'address' => $this->input->post('address'),
-			'speciality' => $this->input->post('spec'),
-			'qualification' => $this->input->post('qf'),
-			'contact_no' => $this->input->post('cno')
+			'sid' => $this->input->post('sid'),
+			'discription' => $this->input->post('discription'),
+			'process_time' => $this->input->post('process_time'),
+			'price' => $this->input->post('price'),
+			'url' => $this->input->post('url'),
+			
 		);
 		$this->admin_model->add_service($data);
 		redirect('index.php/admin/manage_service');
 	}
 	public function search_service(){
-		$this->load->model("admin_model");
+		$this->load->model("service_model");
 		$search=$this->input->post('doc_name');
 		$data['docData']=$this->admin_model->search_service($search);
 		$this->load->view('manageservice',$data);
 	}
 	public function delete_service(){
-		$this->load->model("admin_model");
+		$this->load->model("service_model");
 		$id=$this->input->get('id');
 		$this->admin_model->delete_service($id);
 		redirect('index.php/admin/manage_service');

@@ -84,19 +84,8 @@
         <ul class="nav navbar-nav">
           <li><a href="index.html" class="active">HOME</a></li>
           <li><a href="about.html">ABOUT US</a></li>
-          <li class="dropdown active"> <a data-toggle="dropdown" href="#">SERVICES</a>
-            <ul class="dropdown-menu with-bg" role="menu">
-              <li><a href="services.html">Oral exams</a></li>
-              <li><a href="services.html">Teeth whitening</a></li>
-              <li><a href="services.html">Teeth cleaning</a></li>
-              <li><a href="services.html">X-rays</a></li>
-              <li><a href="services.html">Crowns</a></li>
-              <li><a href="services.html">Fillings and bridges</a></li>
-              <li><a href="services.html">Implants</a></li>
-              <li><a href="services.html">Extractions</a></li>
-              <li><a href="services.html">Root canals</a></li>
-              <li><a href="services.html">Surgical implant placements</a></li>
-            </ul>
+          <li class="dropdown active"> <a data-toggle="dropdown" href="<?php echo base_url();?>index.php/service/services">SERVICES</a>
+            
           </li>
           <li class="dropdown"> <a data-toggle="dropdown" href="#">OUR DOCTORS</a>
             <ul class="dropdown-menu" role="menu">
