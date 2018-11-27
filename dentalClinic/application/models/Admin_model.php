@@ -18,4 +18,24 @@ Class Admin_model extends CI_Model{
 		$this->db->where('did', $id);
   		$this->db->delete('doctor');
 	}
+	public function add_patient($data){
+		$this->load->database("");
+		$this->db->insert('patient', $data);
+	}
+	public function search_patient($search){
+		$this->load->database("");
+		$this->db->select("*");
+		$this->db->from("patient");
+		$this->db->where('pid',$search);
+		$result = $this->db->get();
+		return $result->result();
+	}
+	public function search_patient1($search){
+		$this->load->database("");
+		$this->db->select("*");
+		$this->db->from("patient");
+		$this->db->like('pid',$search);
+		$result = $this->db->get();
+		return $result->result();
+	}
 }

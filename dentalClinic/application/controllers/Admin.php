@@ -35,5 +35,32 @@ class Admin extends CI_Controller {
 	public function edit_doctor(){
 
 	}
+	public function manage_patient(){
+		$this->load->model("admin_model");
+		$search=$this->input->post('pid');
+		$data['pData']=$this->admin_model->search_patient1($search);
+		$this->load->view('managePatient',$data);
+	}
 
+	public function add_patient(){
+		$this->load->model("admin_model");
+		$data = array(
+			'pid' => $this->input->post('pid'),
+			'name' => $this->input->post('pname'),
+			'gender' => $this->input->post('gender'),
+			'address' => $this->input->post('paddress'),
+			'birthday' => $this->input->post('dob'),
+			'contact_num' => $this->input->post('cno'),
+			'username' => $this->input->post('uname'),
+			'password' => $this->input->post('pswrd')
+		);
+		$this->admin_model->add_patient($data);
+		redirect('index.php/admin/manage_patient');
+	}
+	public function search_patient(){
+		$this->load->model("admin_model");
+		$search=$this->input->post('pid');
+		$data['pData']=$this->admin_model->search_patient($search);
+		$this->load->view('managePatient',$data);
+	}
 }
