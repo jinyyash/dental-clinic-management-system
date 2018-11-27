@@ -4,18 +4,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     public function login(){
         $this->load->view('login');
     }
+    public function appointment(){
+        $this->load->view('appointment');
+    }
     public function load_appointment_form(){
-        $this->load->library('form_validation';
-        $this->form_validation->set_rules('username','Username','required');
-        $this->form_validation->set_rules('password','Password','required');
-        if($this->form_validation->run()){
+             
             $username=$this->input->post('username');
             $password=$this->input->post('password');
+             
             $this->load->model('client_model');
-        }
-        else{
-            $this->load->login();
-        }
+            $login=$this->client_model->can_login($username,$password);
+            if($login){
+                $user_data=array(
+                    'user_id'=>login[0],
+                    'username'=>$username,
+                    'logged_in'=>true
+
+                );
+                $this->session->set_userdata($user_data);
+                redirect('/client/appointment');
+
+                
+            }
+            else{
+                redirect('/client/login');
+            }
+            
     }
  }
 ?>

@@ -79,16 +79,16 @@
 <body>
 <div class="wrapper">
 
-    <form class="form-signin" method="post" action="<?php echo base_url();?>/client/load_appointment_form">       
+    <form class="form-signin" method="post" action="<?php echo base_url();?>index.php/client/load_appointment_form">       
       <h2 class="form-signin-heading">Please login First</h2><br>
-      <input type="text" class="form-control" name="username" placeholder="Email Address"  autofocus="" /><br>
+      <input type="text" class="form-control" name="username" placeholder="Username"  autofocus="" /><br>
       
       <input type="password" class="form-control" name="password" placeholder="Password" /> <br>  
         
       <label class="checkbox"><br>
         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
       </label>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button> <br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" >Login</button> <br>
          
     </form>
   </div>

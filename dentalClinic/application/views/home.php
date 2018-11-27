@@ -73,7 +73,7 @@
       
       <!-- HEADER BUTTONS -->
       <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
-        <div class="header-button" > <a href="<?php echo base_url();?>client/login" class="fancybox-2 btn btn-default">
+        <div class="header-button" > <a href="<?php echo base_url();?>index.php/client/login" class="fancybox-2 btn btn-default">
             <span class="plus">
               +
             </span>
