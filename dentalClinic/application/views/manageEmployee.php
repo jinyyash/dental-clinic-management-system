@@ -62,7 +62,7 @@
 			      			</div>
 			      			<div class="w3-col" style="width:50%;">
 			      				<label>Employee Name</label>
-			      				<input class="w3-input w3-border w3-round" type="text" name="dname" placeholder="" value="">
+			      				<input class="w3-input w3-border w3-round" type="text" name="ename" placeholder="" value="">
 			      			</div>
 			      		</div>
 			      		<div class="w3-row-padding" style="padding-top: 20px;">
@@ -75,13 +75,13 @@
 			      		<div class="w3-row-padding" style="padding-top: 20px;">
 			      			<div class="w3-col">
 			      				<label>Contact number</label>
-			      				<input class="w3-input w3-border w3-round" type="text" name="spec" placeholder="" value="">
+			      				<input class="w3-input w3-border w3-round" type="text" name="cn" placeholder="" value="">
 			      			</div>
 			      		</div>
 			      		<div class="w3-row-padding" style="padding-top: 20px;">
 			      			<div class="w3-col" >
 			      				<label>Position</label>
-			      				<input class="w3-input w3-border w3-round" type="text" name="qf" placeholder="" value="">
+			      				<input class="w3-input w3-border w3-round" type="text" name="ps" placeholder="" value="">
 			      			</div>
 			      		</div>
 
@@ -119,7 +119,7 @@
 						<th>Action</th>
 					</tr>
 					<?php if (is_array($docData) ){?>
-					<?php foreach ($docData as $row) {?>
+					<?php foreach ($empData as $row) {?>
 						<tr>
 							<td><?php echo $row->eid; ?></td>
 							<td><?php echo $row->name; ?></td>

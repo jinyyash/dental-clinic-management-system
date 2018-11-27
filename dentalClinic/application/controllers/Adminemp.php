@@ -1,9 +1,7 @@
 <?php
 
-class AdminEmployee extends CI_Controller
+class Admin extends CI_Controller
 {
-
-
 	public function manage_employee()
 	{
 		$this->load->model("admin_model");
@@ -47,4 +45,8 @@ class AdminEmployee extends CI_Controller
 
 	}
 
+
+
 }
+
+
