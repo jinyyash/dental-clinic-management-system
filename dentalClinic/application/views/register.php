@@ -84,7 +84,7 @@
       <label>Name</label>
       <input type="text" class="form-control" name="name" placeholder="Enter Name.."  autofocus="" /><br>
       <label>Gender</label><br>
-      <input type="radio" name="gender" value="Male"> Male     <input type="radio" name="gender" value="Female"> Female<br>
+      <input type="radio" name="gender" value="Male"> Male     <input type="radio" name="gender" value="Female"> Female<br><br>
       <label>Address</label>
       <input type="text" class="form-control" name="address" placeholder="Enter Address.."  autofocus="" /><br>
       <label>Birthday</label>
