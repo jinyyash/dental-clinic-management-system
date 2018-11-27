@@ -7,6 +7,11 @@ class Admin extends CI_Controller {
 		$data['docData']=$this->admin_model->search_doctor($search);
 		$this->load->view('manageDoctor',$data);
 	}
+	public function all_doctors() {
+		$this->load->model("admin_model");
+		$data['docData']=$this->admin_model->get_doctor();
+		$this->load->view('doctor_view', $data);
+    }
 	public function add_doctor(){
 		$this->load->model("admin_model");
 		$data = array(

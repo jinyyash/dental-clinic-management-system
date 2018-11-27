@@ -38,4 +38,16 @@ Class Admin_model extends CI_Model{
 		$result = $this->db->get();
 		return $result->result();
 	}
+	public function get_doctor() {
+		$this->load->database("");
+		$this->db->select("*");
+		$this->db->from("doctor");
+		$result = $this->db->get();
+	
+		return $result->result();
+	
+	
+	
+	
+	}
 }
