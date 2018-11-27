@@ -11,6 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         if($this->form_validation->run()){
             $username=$this->input->post('username');
             $password=$this->input->post('password');
+            $this->load->model('client_model');
         }
         else{
             $this->load->login();
