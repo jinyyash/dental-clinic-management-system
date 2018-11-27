@@ -1,13 +1,17 @@
 <?php
 
-class Admin extends CI_Controller {
-	public function manage_doctor(){
+class Admin extends CI_Controller
+{
+	public function manage_doctor()
+	{
 		$this->load->model("admin_model");
-		$search=$this->input->post('doc_name');
-		$data['docData']=$this->admin_model->search_doctor($search);
-		$this->load->view('manageDoctor',$data);
+		$search = $this->input->post('doc_name');
+		$data['docData'] = $this->admin_model->search_doctor($search);
+		$this->load->view('manageDoctor', $data);
 	}
-	public function add_doctor(){
+
+	public function add_doctor()
+	{
 		$this->load->model("admin_model");
 		$data = array(
 			'did' => $this->input->post('id'),
@@ -20,20 +24,27 @@ class Admin extends CI_Controller {
 		$this->admin_model->add_doctor($data);
 		redirect('index.php/admin/manage_doctor');
 	}
-	public function search_doctor(){
+
+	public function search_doctor()
+	{
 		$this->load->model("admin_model");
-		$search=$this->input->post('doc_name');
-		$data['docData']=$this->admin_model->search_doctor($search);
-		$this->load->view('manageDoctor',$data);
+		$search = $this->input->post('doc_name');
+		$data['docData'] = $this->admin_model->search_doctor($search);
+		$this->load->view('manageDoctor', $data);
 	}
-	public function delete_doctor(){
+
+	public function delete_doctor()
+	{
 		$this->load->model("admin_model");
-		$id=$this->input->get('id');
+		$id = $this->input->get('id');
 		$this->admin_model->delete_doctor($id);
 		redirect('index.php/admin/manage_doctor');
 	}
-	public function edit_doctor(){
+
+	public function edit_doctor()
+	{
 
 	}
+
 
 }
