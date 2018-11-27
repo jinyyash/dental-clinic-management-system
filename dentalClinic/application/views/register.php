@@ -80,16 +80,22 @@
 <div class="wrapper">
 
     <form class="form-signin" method="post" action="<?php echo base_url();?>/client/load_appointment_form">       
-      <h2 class="form-signin-heading">Please login First</h2><br>
-      <input type="text" class="form-control" name="username" placeholder="Email Address"  autofocus="" /><br>
+      <h2 class="form-signin-heading">Please Register Here</h2><br>
+      <label>Name</label>
+      <input type="text" class="form-control" name="name" placeholder="Enter Name.."  autofocus="" /><br>
+      <label>Gender</label><br>
+      <input type="radio" name="gender" value="Male"> Male     <input type="radio" name="gender" value="Female"> Female<br>
+      <label>Address</label>
+      <input type="text" class="form-control" name="address" placeholder="Enter Address.."  autofocus="" /><br>
+      <label>Birthday</label>
+      <input type="text" class="form-control" name="bday" placeholder="Enter Birthday.."  autofocus="" /><br>
+      <label>Contact Number</label>
+      <input type="tel" class="form-control" name="contact" placeholder="Enter Contact Number.."  autofocus="" /><br>
       
-      <input type="password" class="form-control" name="password" placeholder="Password" /> <br>  
         
-      <label class="checkbox"><br>
-        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
-      </label>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button> <br>
          
+         
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>   
     </form>
   </div>
 </body>
