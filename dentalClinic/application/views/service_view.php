@@ -82,38 +82,17 @@
           </div>
         </div>
         <ul class="nav navbar-nav">
-          <li><a href="index.html" class="active">HOME</a></li>
+          <li class="active"><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT US</a></li>
-          <li class="dropdown active"> <a data-toggle="dropdown" href="<?php echo base_url();?>index.php/service/services">SERVICES</a>
-            
+          <li > <a  href="<?php echo base_url();?>index.php/service/services">SERVICES</a>
           </li>
-          <li class="dropdown"> <a data-toggle="dropdown" href="#">OUR DOCTORS</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="doctors.html">Our doctors</a></li>
-              <li><a href="doctor.html">Doctor</a></li>
-            </ul>
+          <li > <a  href="<?php echo base_url();?>index.php/admin/all_doctors">OUR DOCTORS</a>
+      
           </li>
-          <li class="dropdown"> <a data-toggle="dropdown" href="#">BLOG</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="blog1.html">Right sidebar</a></li>
-              <li><a href="blog2.html">Left sidebar</a></li>
-              <li><a href="blog3.html">No sidebar</a></li>
-              <li><a href="blog4.html">Column right sidebar</a></li>
-              <li><a href="blog_item.html">Post with sidebar</a></li>
-              <li><a href="blog_item2.html">Post no sidebar</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"> <a data-toggle="dropdown" href="#">PAGES</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="gallery1.html">Gallery 1</a></li>
-              <li><a href="gallery2.html">Gallery 2</a></li>
-              <li><a href="prices.html">Prices</a></li>
-              <li><a href="timetable.html">Timetable</a></li>
-              <li><a href="payment.html">Payments</a></li>
-              <li><a href="404.html">404 Page</a></li>
-            </ul>
-          </li>
-          <li><a href="contacts.html">CONTACT US</a></li>
+          <li > <a  href="<?php echo base_url();?>index.php/prices/price">PRICES</a>
+        </li>
+        <li > <a  href="<?php echo base_url();?>index.php/prices/price">CONTACT US</a>
+        </li>
         </ul>
       </div>
     </div>
@@ -182,7 +161,7 @@
   </ul>
   <div class="container">
     <div class="row">
-      <div class="serv-items" id="isotope-items">
+      <div class="ser v-items" id="isotope-items">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 serv-item isotope-item dental">
           <div class="serv-item-image"> <img src="<?php echo base_url();?>assets/images/serv1.jpg" alt="" /> </div>
           <div class="serv-item-text">

@@ -119,18 +119,10 @@
           <li > <a  href="<?php echo base_url();?>index.php/admin/all_doctors">OUR DOCTORS</a>
       
           </li>
-
-          <li class="dropdown"> <a data-toggle="dropdown" href="#">PAGES</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="gallery1.html">Gallery 1</a></li>
-              <li><a href="gallery2.html">Gallery 2</a></li>
-              <li><a href="prices.html">Prices</a></li>
-              <li><a href="timetable.html">Timetable</a></li>
-              <li><a href="payment.html">Payments</a></li>
-              <li><a href="404.html">404 Page</a></li>
-            </ul>
-          </li>
-          <li><a href="contacts.html">CONTACT US</a></li>
+          <li > <a  href="<?php echo base_url();?>index.php/prices/price">PRICES</a>
+        </li>
+        <li > <a  href="<?php echo base_url();?>index.php/prices/price">CONTACT US</a>
+        </li>
         </ul>
       </div>
     </div>
@@ -193,7 +185,8 @@
           <div class="doctors-item-container">
             <div class="doctors-item-image"> <img src="<?php echo base_url();?>assets/images/doctor1.jpg" alt="" /> </div>
             <div class="doctors-item-name"><?php echo $row->name; ?></div>
-            <div class="doctors-item-position">General Dentist</div>
+            <div class="doctors-item-name"><?php echo $row->qualification; ?></div>
+            <div class="doctors-item-position"><?php echo $row->speciality; ?></div>
           </div>
           <div class="doctors-item-social"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-skype"></i></a> </div>
           <div class="doctors-item-button"> <a href="#bookform2" class="fancybox-1 btn btn-default">

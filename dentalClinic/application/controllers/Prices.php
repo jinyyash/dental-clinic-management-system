@@ -1,19 +1,14 @@
 <?php 
 
-class Service extends CI_Controller {
+class Prices extends CI_Controller {
     public function allservices() {
 		$data['service'] = $this->project_model->get_service();
 		$data['main_view'] = "service/index";
-
 		$this->load->view('service_view', $data);
     }
-    public function services()
+    public function price()
 	{
-		$this->load->view('service_view');
-	}
-	public function price()
-	{
-		$this->load->view('service_view');
+		$this->load->view('prices_view');
     }
     public function manage_service(){
 		$this->load->model("service_model");

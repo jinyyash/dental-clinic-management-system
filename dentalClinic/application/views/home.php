@@ -8,7 +8,7 @@
 
 
 <!-- SITE TITLE -->
-<title>DentalClinic - Responsive Clinic HTML Template</title>
+<title>Happy Teeth-Dental Clinic </title>
 
 <!-- =========================
       FAV AND TOUCH ICONS  
@@ -119,19 +119,13 @@
           <li > <a  href="<?php echo base_url();?>index.php/admin/all_doctors">OUR DOCTORS</a>
       
           </li>
-
-          <li class="dropdown"> <a data-toggle="dropdown" href="#">PAGES</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="gallery1.html">Gallery 1</a></li>
-              <li><a href="gallery2.html">Gallery 2</a></li>
-              <li><a href="prices.html">Prices</a></li>
-              <li><a href="timetable.html">Timetable</a></li>
-              <li><a href="payment.html">Payments</a></li>
-              <li><a href="404.html">404 Page</a></li>
-            </ul>
-          </li>
-          <li><a href="contacts.html">CONTACT US</a></li>
+          <li > <a  href="<?php echo base_url();?>index.php/prices/price">PRICES</a>
+        </li>
+        <li > <a  href="<?php echo base_url();?>index.php/prices/price">CONTACT US</a>
+        </li>
         </ul>
+
+         
       </div>
     </div>
   </div>
@@ -166,9 +160,10 @@
         <p class="sp-layer slider-text" 
                         data-position="leftCenter" data-horizontal="15" data-vertical="80" 
                         data-show-transition="left" data-hide-transition="left"
-                        data-show-delay="600" data-hide-delay="600"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>
-          trud exercitation ullamco laboris. </p>
+                        data-show-delay="600" data-hide-delay="600"> <br>
+                        Taking good care of your mouth, teeth and gums is a worthy goal in and of itself.<br> Good oral and dental hygiene can help prevent bad breath, tooth decay
+                        <br> and gum disease—and can help you keep your teeth as you get older.-<br>
+          </p>
         <p class="sp-layer slider-button" 
                         data-position="leftCenter" data-horizontal="15" data-vertical="300" 
                         data-show-transition="left" data-hide-transition="left"
@@ -195,9 +190,7 @@
         <p class="sp-layer slider-text" 
                         data-position="leftCenter" data-horizontal="15" data-vertical="80" 
                         data-show-transition="left" data-hide-transition="left"
-                        data-show-delay="600" data-hide-delay="600"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>
-          trud exercitation ullamco laboris. </p>
+                        data-show-delay="600" data-hide-delay="600"> </p>
         <p class="sp-layer slider-button" 
                         data-position="leftCenter" data-horizontal="15" data-vertical="300" 
                         data-show-transition="left" data-hide-transition="left"
@@ -224,9 +217,7 @@
         <p class="sp-layer slider-text" 
                         data-position="leftCenter" data-horizontal="15" data-vertical="80" 
                         data-show-transition="left" data-hide-transition="left"
-                        data-show-delay="600" data-hide-delay="600"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos-<br>
-          trud exercitation ullamco laboris. </p>
+                        data-show-delay="600" data-hide-delay="600"> </p>
         <p class="sp-layer slider-button" 
                         data-position="leftCenter" data-horizontal="15" data-vertical="300" 
                         data-show-transition="left" data-hide-transition="left"
@@ -1419,7 +1410,6 @@
     END POPUP FORMS
 ============================== -->
 
-<div class="totop" id="totop"> <i class="fa fa-angle-up"></i> </div>
 
 <!-- =========================
     COLOR SWITHER
